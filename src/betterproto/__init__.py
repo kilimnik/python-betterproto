@@ -974,7 +974,7 @@ class Message(ABC):
                 # if this is the selected oneof item or if we know we have to
                 # serialize an empty message (i.e. zero value was explicitly
                 # set by the user).
-                continue
+                pass
 
             if isinstance(value, list):
                 if meta.proto_type in PACKED_TYPES:
@@ -1080,7 +1080,7 @@ class Message(ABC):
                 # if this is the selected oneof item or if we know we have to
                 # serialize an empty message (i.e. zero value was explicitly
                 # set by the user).
-                continue
+                pass
 
             if isinstance(value, list):
                 if meta.proto_type in PACKED_TYPES:
